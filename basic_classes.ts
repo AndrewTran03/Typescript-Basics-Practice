@@ -1,6 +1,8 @@
 //Classes in TS
 
 //Similar to Java Classes (by the way)...
+//NOTE: Getters and Setters need flag: "--target es6" at the end since current
+//version of Ubuntu-20.04 VM runs on es5 for ECMAScript. -Andrew Tran (11.21.2022)
 
 class User
 {
