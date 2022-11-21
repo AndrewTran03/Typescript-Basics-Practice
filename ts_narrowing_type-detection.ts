@@ -139,7 +139,10 @@ function getTrueShape(shape: Shape)
     {
         return Math.PI * shape.radius ** 2;
     }
-    //return shape.side ** 2;
+    //return shape.side ** 2; //<= Note: Did not do exhausive search here.
+    
+    //Definitely recommended to look at example below for better TS practices 
+    //in terms of type-narrowing/type-detection. 
 }
 
 //Exhaustive Checking
