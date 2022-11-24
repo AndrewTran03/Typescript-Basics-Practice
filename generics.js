@@ -1,8 +1,8 @@
 "use strict";
 //Generics in TS
-exports.__esModule = true;
-var scores = [];
-var names = [];
+Object.defineProperty(exports, "__esModule", { value: true });
+const scores = [];
+const names = [];
 //Bad: Limited to Two Types - What happens if the type was 
 //different than the one specified?
 function identityOne(val) {
@@ -30,7 +30,7 @@ function identityFour(val) {
 }
 identityFour("Andrew T");
 ;
-var newBottle = {
+let newBottle = {
     brand: "Water",
     type: 1
 };
@@ -39,12 +39,12 @@ identityFour({ brand: "Aqua", type: 2 });
 //Arrays and Generics
 function getSearchProducts(products) {
     //Suppose if we were doing some complex database operations...
-    var returnIndex = 3;
+    let returnIndex = 3;
     return products[returnIndex];
 }
-var getMoreSearchProducts = function (products) {
+const getMoreSearchProducts = (products) => {
     //Suppose if we were doing some more complex database operations...
-    var returnIndex = 4;
+    let returnIndex = 4;
     return products[returnIndex];
 };
 ;
@@ -54,10 +54,21 @@ var getMoreSearchProducts = function (products) {
 // }
 //anotherGenericFunction(3, "4");
 function anotherGenericFunction2(valOne, valTwo) {
-    return { valOne: valOne, valTwo: valTwo };
+    return { valOne, valTwo };
 }
 anotherGenericFunction2("Andrew", {
     connection: "Strong",
     username: "andrewt03",
     password: "1234"
 });
+;
+;
+//Generic Classes
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(products) {
+        this.cart.push(products);
+    }
+}

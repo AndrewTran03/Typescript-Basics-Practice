@@ -1,15 +1,15 @@
 "use strict";
 //Array Basics
-exports.__esModule = true;
-var superHeroes = [];
+Object.defineProperty(exports, "__esModule", { value: true });
+const superHeroes = [];
 //const superHeroes: Array<string> = [];
 superHeroes.push("Spiderman");
-var heroNumPowers = [];
+const heroNumPowers = [];
 heroNumPowers.push(2);
-var allUsers = [];
+const allUsers = [];
 allUsers.push({ name: "", isActive: true });
 //Multi-Dimensional Arrays
-var MLModels = [
+const MLModels = [
     [255, 255, 255],
     []
 ];

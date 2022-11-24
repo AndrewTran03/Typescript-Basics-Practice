@@ -1,18 +1,17 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 //Create basic objects with TS
-var user = {
+const user = {
     name: "Andrew",
     email: "andrew@gmail.com",
     isActive: true
 };
 //Passing objects with TS as parameters
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
+function createUser({ name, isPaid }) {
 }
 createUser({ name: "Andrew", isPaid: true });
 //Weird behavior of objects in TS
-var newUser = { name: "Andrew", isPaid: true, age: 19 };
+let newUser = { name: "Andrew", isPaid: true, age: 19 };
 createUser(newUser);
 //Returning objects with TS
 function createCourse() {
@@ -28,14 +27,14 @@ function printCoordinate(pt) {
     console.log("The y-coordinate's value is " + pt.y);
 }
 printCoordinate({ x: 100, y: 100 });
-var myUser = {
+let myUser = {
     _id: "12345",
     name: "A",
     email: "a@a.com",
     isActive: true
 };
 myUser.email = "andrew@gmail.com";
-var myCardDetails = {
+let myCardDetails = {
     number: "1",
     cardDate: "1/1/01",
     cvv: 1234

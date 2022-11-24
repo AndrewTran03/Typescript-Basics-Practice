@@ -1,17 +1,17 @@
 "use strict";
 //Interfaces in TS
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 ;
 ;
-var newUser = {
+const newUser = {
     dbId: 1,
     email: "example@google.com",
     userId: 123456,
     githubToken: "0001 0000",
-    startTrail: function () {
+    startTrail: () => {
         return "Trail Started";
     },
-    getCoupon: function (couponName, off) {
+    getCoupon: (couponName, off) => {
         return 10;
     }
 };

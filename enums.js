@@ -1,6 +1,6 @@
 "use strict";
 //Enums in TS
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var SeatChoice;
 (function (SeatChoice) {
     SeatChoice["AISLE"] = "aisle";
@@ -9,4 +9,4 @@ var SeatChoice;
     SeatChoice[SeatChoice["FOURTH"] = 5] = "FOURTH";
 })(SeatChoice || (SeatChoice = {}));
 ;
-var mySeat = SeatChoice.AISLE;
+const mySeat = SeatChoice.AISLE;

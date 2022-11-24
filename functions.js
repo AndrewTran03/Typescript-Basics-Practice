@@ -1,10 +1,10 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 function addTwo(num) {
     //return "hello"; //<= Function returns will check for invalid returns if given type annotations 
     return num + 2;
 }
-var result = addTwo(5);
+let result = addTwo(5);
 console.log(result);
 function getUpper(val) {
     return val.toUpperCase();
@@ -17,9 +17,7 @@ function signUpUser(name, email, password, isPaid) { }
 signUpUser("Andrew", "andrewt@yahoo.com", "Password", false);
 //TS with JS Arrow Functions
 //Function Parameters (Default Value): <variable>: <type> = <default value>
-var loginUser = function (name, email, isCool) {
-    if (isCool === void 0) { isCool = false; }
-};
+let loginUser = (name, email, isCool = false) => { };
 loginUser("Andrew", "andrewt@yahoo.com");
 // function getValue(myVal: number): boolean
 // {
@@ -32,13 +30,13 @@ loginUser("Andrew", "andrewt@yahoo.com");
 //         return "200 OK";
 //     }
 // }
-var getHello = function (s) {
+const getHello = (s) => {
     return "hello";
 };
-var heroes = ["Thor", "Superman", "Iron-Man"];
+const heroes = ["Thor", "Superman", "Iron-Man"];
 //const heroes = [1, 2, 3];
-heroes.map(function (hero) {
-    return "Hero is " + hero;
+heroes.map((hero) => {
+    return `Hero is ${hero}`;
 });
 //Void Type: No return type
 function printConsoleError(errorMsg) {

@@ -1,22 +1,20 @@
 "use strict";
 //Why are Interfaces Important?
-exports.__esModule = true;
-var Instagram = /** @class */ (function () {
-    function Instagram(cameraMode, filter, burst) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class Instagram {
+    constructor(cameraMode, filter, burst) {
         this.cameraMode = cameraMode;
         this.filter = filter;
         this.burst = burst;
     }
-    return Instagram;
-}());
-var YouTube = /** @class */ (function () {
-    function YouTube(cameraMode, filter, burst) {
+}
+class YouTube {
+    constructor(cameraMode, filter, burst) {
         this.cameraMode = cameraMode;
         this.filter = filter;
         this.burst = burst;
     }
-    YouTube.prototype.createStory = function () {
+    createStory() {
         console.log("Story was created");
-    };
-    return YouTube;
-}());
+    }
+}

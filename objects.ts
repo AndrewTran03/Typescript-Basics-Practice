@@ -7,7 +7,10 @@ const user =
 }
 
 //Passing objects with TS as parameters
-function createUser({name: string, isPaid: boolean}) {}
+function createUser({name, isPaid}: {name: string, isPaid: boolean}): void
+{
+
+}
 
 createUser({name: "Andrew", isPaid: true});
 

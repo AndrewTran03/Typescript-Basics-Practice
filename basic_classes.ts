@@ -10,8 +10,8 @@ class User
     public name: string; //Public (Auto-Scope with no visibility modifier):
                          //Is visible outside of class (not recommended)
     readonly id: number = 10300;
-    private _courseCount: number;
-    protected familyPassword: string;
+    private _courseCount: number = 1;
+    protected familyPassword: string = "";
 
     constructor(email: string, name: string)
     {
